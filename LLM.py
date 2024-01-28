@@ -10,7 +10,7 @@ def load_ai():
     
 
 
-    genai.configure(api_key=os.environ['apikey'])
+    genai.configure(api_key= os.environ.get['apikey'])
 
     # Set up the model
     generation_config = {
