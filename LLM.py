@@ -8,14 +8,9 @@ import google.generativeai as genai
 
 def load_ai():
     
-    path = 'params\keys.json'
-
-    with open(path, 'r') as file:
-    # Load the JSON content from the file
-        data = json.load(file)
 
 
-    genai.configure(api_key=data['api-key'])
+    genai.configure(api_key=os.environ['apikey'])
 
     # Set up the model
     generation_config = {
