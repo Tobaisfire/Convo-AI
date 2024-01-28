@@ -28,37 +28,3 @@ def home():
 
 
 
-@app.route('/send_message', methods=['POST'])
-def get_response():
-    # user = session['user']
-    
-    user_message = request.form.get('user_message')
-    
-
- 
-    bot_reply = generate_reply(user_message,ai_model)
-
-    response = {
-        'bot_reply': bot_reply
-    }
-    
-    return jsonify(response)
-
-
-
-
-
-def generate_reply(message,model):
-
-
-
-    query = message
-
-    response= convo(model,str(query))
-
-    AI = response[0]
-  
-    return AI
-
-
-# app.run()
