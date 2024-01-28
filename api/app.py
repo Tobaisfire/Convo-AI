@@ -1,7 +1,7 @@
 
 from flask import Flask, request, jsonify,render_template,redirect,session
 from time import sleep
-from LLM import *
+# from LLM import *
 import google.generativeai as genai
 import os
 
