@@ -32,3 +32,17 @@ def load_ai():
 
 
 
+ai_model = load_ai()
+def convo(ai_model,query):
+
+
+ 
+ 
+    ai_model.send_message(query)
+    AI_MSG = ai_model.last.text
+    # print(AI_MSG)
+    chat_history = ai_model.history
+    if len(ai_model.history) >= 50:
+        ai_model.history.clear()
+    
+    return AI_MSG,chat_history
