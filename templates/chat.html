@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tobi-AI</title>
+    <!-- <link rel="stylesheet" href="chat.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='chat.css') }}">
+    <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <!-- Content for the left column goes here -->
+            <p>Chat-history</p>
+            <button class="new-chat-button" onclick="startNewChat()">New Chat</button>
+        
+        </div>
+        <div class="right-column">
+
+            <div class="navbar">
+                <span class="navbar-title">Chat with Tobi</span>
+                <span class="tobi-indicator">Gemini-Pro</span>
+            </div>
+            <!-- Content for the right column goes here -->
+            <div class="messages-section" id="messagesSection">
+                <!-- Messages will be dynamically added here using JavaScript -->
+            </div>
+            <div class="input-section">
+                <input type="text" class="input-message" id="userMessage" placeholder="Type your message..." onkeyup="handleKeyPress(event)">
+                <button class="send-button" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='chat.js') }}">
+         </script>
+
+      
+
+   
+</body>
+</html>
