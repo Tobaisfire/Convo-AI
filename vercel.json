@@ -8,14 +8,6 @@
   ],
   "routes": [
     {
-      "src": "/static/(.*)",
-      "dest": "/static/$1"
-    },
-    {
-      "src": "/templates/(.*)",
-      "dest": "/templates/$1"
-    },
-    {
       "src": "/(.*)",
       "dest": "/app.py"
     }
