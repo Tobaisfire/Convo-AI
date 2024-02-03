@@ -13,7 +13,8 @@ Welcome to the Gemini API Quickstart! This project leverages the Gemini API to g
 Before you begin, make sure you meet the following requirements:
 
 - Python 3.9+
-- Jupyter installed to run the notebook.
+- Flask
+- google-generativeai
 
 Alternatively, you can run this quickstart in Google Colab without additional environment configuration.
 
