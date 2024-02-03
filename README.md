@@ -56,6 +56,10 @@ Running on http://127.0.0.1:5000
 ```
 Go to Link and Talk with AI
 
+##CHAT-AI
+![image](https://github.com/Tobaisfire/Convo-AI/assets/67000746/588981ab-8dcf-4af6-bf1d-67ab0dafbac4)
+
+
 ### Models Available :
 Note: Detailed information about the available models, including capabilities and rate limits, can be found in the Gemini models documentation. Rate limits for Gemini-Pro models are set at 60 requests per minute (RPM).
 
