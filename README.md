@@ -26,23 +26,12 @@ The Gemini API Python SDK is contained in the `google-generativeai` package. Ins
 ```bash
 pip install -q -U google-generativeai
 ```
-### Setting Format 
+### Install requiremesnt.txt
+
+```bash
+pip install  -r requirements.txt
 ```
-import pathlib
-import textwrap
 
-import google.generativeai as genai
-
-# Used to securely store your API key
-from google.colab import userdata
-
-from IPython.display import display
-from IPython.display import Markdown
-
-def to_markdown(text):
-  text = text.replace('•', '  *')
-  return Markdown(textwrap.indent(text, '> ', predicate=lambda _: True))
-```
 
 ## Setup Your API Key
 
@@ -57,6 +46,15 @@ Pass the key to genai.configure(api_key=...).
 GOOGLE_API_KEY = userdata.get('GOOGLE_API_KEY')
 genai.configure(api_key=GOOGLE_API_KEY)
 ```
+
+### Run Flask app 
+
+```bash
+python run app.py
+
+Running on http://127.0.0.1:5000
+```
+Go to Link and Talk with AI
 
 ### Models Available :
 Note: Detailed information about the available models, including capabilities and rate limits, can be found in the Gemini models documentation. Rate limits for Gemini-Pro models are set at 60 requests per minute (RPM).
